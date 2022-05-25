@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤PARA MI PRINCESA❤</title>
+    <style>
+        .body {
+            background-color: crimson;
+            text-align: center;
+        }
+        .body__title{
+            color: white;
+        }
+        .body__img {
+            width: 20%;
+            border-radius: 20%;
+        }
+    </style> 
+</head>
+
+<body class="body"> 
+    <h1 class="body_title">❤ COMENZAMOS UNA LOCURA DE RELACION ❤</h1>
+    <img src="lol.jpg" alt="foto de nosotros" class="body__img">
+
+    <button id="yes">😍 SI QUIERO 😍</button>
+    <button id="pronto">😅 ES MUY PRONTO 😅</button>
+    <button id="loco">😜😵 ACEPTO NUESTRA LOCURA 😵😜 </button>
+    
+    <script>
+        const vutonSi = document.getElementById("yes");
+        const vutonPronto = document.getElementById("pronto");
+        const vutonLoco = document.getElementById("loco");
+
+        const somosNovios = () => {
+            alert(" SOMOS NOVIOS EN NUESTRO MUNDO DE LOCOS ");
+        };
+        const elPronto = () => { 
+            alert("😅CREO QUE ME APRESURE IGUAL TE QUIERO VOY A ESPERAR A QUE ESTES LISTA😘");
+        };
+        const sii = () => { 
+            alert("🤯💕 AQUI COMIENZA UN CAMINO DE LOCURA GRACIAS POR ACEPTAR TE QUIERO MUTISMO MI LOQUITA AAAA Y TAMBIEN TE QUIERO MUCHITO MI PRINCESA👸");
+        };
+        const evitarElsi = () => {
+        vutonSi.style.position = "absolute";
+        vutonSi.style.top = (Math.random()*window.innerHeight)+ 'px';  
+        vutonSi.style.left = (Math.random()*window.innerWidth)+ 'px';  
+        };
+       
+        vutonSi.addEventListener("mouseover", evitarElsi);
+        vutonPronto.addEventListener("click", elPronto);
+        vutonLoco.addEventListener("click", sii);
+
+    </script>
+
+
+</body>
+</html>
